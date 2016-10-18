@@ -19,19 +19,17 @@ router.get('/about', function(req, res, next) {
 
 router.get('/faq', function (req, res, next) {
   var questions = {
-      questions = ['Can I have a cookie?'],
-      anwers = ['yaas']
+      questions: ['Can I have a cookie?'],
+      anwers: ['yaas']
   };
   res.render('faq', questions);
 });
 
 router.get('/login', function(req, res, next) {
   var user = {
-    var user = {
       // name: 'jim',
       password: 'banjo',
       hint: 'secret'
-    }
   };
   res.render('login', user);
 });
